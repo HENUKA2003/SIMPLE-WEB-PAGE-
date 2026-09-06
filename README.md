@@ -44,3 +44,25 @@ PS C:\Windows\system32> Get-Content "C:\Program Files (x86)\ossec-agent\ossec.lo
 
 
 Test-NetConnection 198.168.156.128 -Port 1514
+
+
+
+
+ failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.'.
+PS C:\Windows\system32> Test-NetConnection 198.168.156.128 -Port 1514
+WARNING: TCP connect to (198.168.156.128 : 1514) failed
+WARNING: Ping to 198.168.156.128 failed with status: TimedOut
+
+
+ComputerName           : 198.168.156.128
+RemoteAddress          : 198.168.156.128
+RemotePort             : 1514
+InterfaceAlias         : Ethernet0
+SourceAddress          : 192.168.156.134
+PingSucceeded          : False
+PingReplyDetails (RTT) : 0 ms
+TcpTestSucceeded       : False
+
+
+
+PS C:\Windows\system32>
