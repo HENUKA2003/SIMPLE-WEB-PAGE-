@@ -32,3 +32,6 @@ Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.14.7
 
 MDAzIHdpbiAxOTIuMTY4LjE1Ni4xMzQgYTBiNTMyMzBhYTA2ZWFkODFlZjVmNmI3YWE0NWEyMzFlMmZlYTUzODkyOGJjMjI4ZDdjZjk2NGIxNGZiYTljOQ==
 
+
+Select-String -Path "C:\Program Files (x86)\ossec-agent\ossec.conf" -Pattern "<address>"
+
