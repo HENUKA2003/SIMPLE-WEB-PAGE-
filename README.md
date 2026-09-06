@@ -11,3 +11,7 @@ Get-Content "C:\Program Files (x86)\ossec-agent\ossec.conf" | Select-String -Pat
 Test-NetConnection YOUR_UBUNTU_IP -Port 1514
 
 Restart-Service WazuhSvc
+
+
+
+Get-Content "C:\Program Files (x86)\ossec-agent\ossec.log" -Tail 30
