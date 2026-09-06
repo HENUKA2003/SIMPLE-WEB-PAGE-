@@ -15,3 +15,7 @@ Restart-Service WazuhSvc
 
 
 Get-Content "C:\Program Files (x86)\ossec-agent\ossec.log" -Tail 30
+
+
+
+Test-NetConnection 198.168.156.128 -Port 1514
