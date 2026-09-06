@@ -9,3 +9,5 @@ MDAxIFdJTkRPUzEwIDE5Mi4xNjguMTU2LjIgOTI3NWRhN2ViNzk4NDYyYjI3NTE3NzIwODUxZTRlYWE4
 Get-Content "C:\Program Files (x86)\ossec-agent\ossec.conf" | Select-String -Pattern "address|port|protocol"
 
 Test-NetConnection YOUR_UBUNTU_IP -Port 1514
+
+Restart-Service WazuhSvc
