@@ -15,3 +15,32 @@ Restart-Service WazuhSvc
 
 
 Get-Content "C:\Program Files (x86)\ossec-agent\ossec.log" -Tail 30
+
+PS C:\Windows\system32> Get-Content "C:\Program Files (x86)\ossec-agent\ossec.log" -Tail 3
+2026/09/06 13:48:48 wazuh-agent: INFO: Trying to connect to server ([198.168.156.128]:1514/tcp).
+2026/09/06 13:49:09 wazuh-agent: ERROR: (1216): Unable to connect to '[198.168.156.128]:1514/tcp': 'No connection could be made because the target machine actively refused it.'.
+2026/09/06 13:49:09 wazuh-agent: INFO: Requesting a key from server: 198.168.156.128
+
+
+
+
+
+
+
+
+PS C:\Windows\system32> Get-Content "C:\Program Files (x86)\ossec-agent\ossec.log" -Tail 10
+2026/09/06 14:00:14 sca: INFO: Starting evaluation of policy: 'C:\Program Files (x86)\ossec-agent\ruleset\sca\cis_win10_enterprise.yml'
+2026/09/06 14:00:14 wazuh-modulesd:osquery: INFO: Module disabled. Exiting...
+2026/09/06 14:00:14 wazuh-modulesd:syscollector: INFO: Module started.
+2026/09/06 14:00:14 wazuh-modulesd:syscollector: INFO: Starting evaluation.
+2026/09/06 14:00:14 wazuh-agent: INFO: (6000): Starting daemon...
+2026/09/06 14:00:14 wazuh-agent: INFO: (6010): File integrity monitoring scan frequency: 43200 seconds
+2026/09/06 14:00:14 wazuh-agent: INFO: (6008): File integrity monitoring scan started.
+2026/09/06 14:00:14 wazuh-agent: INFO: Started (pid: 5224).
+2026/09/06 14:00:16 wazuh-modulesd:syscollector: INFO: Evaluation finished.
+2026/09/06 14:00:35 wazuh-agent: ERROR: (1216): Unable to connect to '[198.168.156.128]:1514/tcp': 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.'.
+
+
+
+
+Test-NetConnection 198.168.156.128 -Port 1514
