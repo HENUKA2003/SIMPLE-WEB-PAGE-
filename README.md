@@ -39,3 +39,8 @@ PS C:\Windows\system32> Get-Content "C:\Program Files (x86)\ossec-agent\ossec.lo
 2026/09/06 14:00:14 wazuh-agent: INFO: Started (pid: 5224).
 2026/09/06 14:00:16 wazuh-modulesd:syscollector: INFO: Evaluation finished.
 2026/09/06 14:00:35 wazuh-agent: ERROR: (1216): Unable to connect to '[198.168.156.128]:1514/tcp': 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.'.
+
+
+
+
+Test-NetConnection 198.168.156.128 -Port 1514
