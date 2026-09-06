@@ -28,17 +28,7 @@ PS C:\Windows\system32> Get-Content "C:\Program Files (x86)\ossec-agent\ossec.lo
 
 
 
-PS C:\Windows\system32> Get-Content "C:\Program Files (x86)\ossec-agent\ossec.log" -Tail 10
-2026/09/06 14:00:14 sca: INFO: Starting evaluation of policy: 'C:\Program Files (x86)\ossec-agent\ruleset\sca\cis_win10_enterprise.yml'
-2026/09/06 14:00:14 wazuh-modulesd:osquery: INFO: Module disabled. Exiting...
-2026/09/06 14:00:14 wazuh-modulesd:syscollector: INFO: Module started.
-2026/09/06 14:00:14 wazuh-modulesd:syscollector: INFO: Starting evaluation.
-2026/09/06 14:00:14 wazuh-agent: INFO: (6000): Starting daemon...
-2026/09/06 14:00:14 wazuh-agent: INFO: (6010): File integrity monitoring scan frequency: 43200 seconds
-2026/09/06 14:00:14 wazuh-agent: INFO: (6008): File integrity monitoring scan started.
-2026/09/06 14:00:14 wazuh-agent: INFO: Started (pid: 5224).
-2026/09/06 14:00:16 wazuh-modulesd:syscollector: INFO: Evaluation finished.
-2026/09/06 14:00:35 wazuh-agent: ERROR: (1216): Unable to connect to '[198.168.156.128]:1514/tcp': 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.'.
+
 
 
 
@@ -79,3 +69,11 @@ At line:1 char:1
 + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     + CategoryInfo          : ObjectNotFound: (Test-NetConnetion192.168.159.128:String) [], CommandNotFoundException
     + FullyQualifiedErrorId : CommandNotFoundException
+
+
+
+
+
+
+  Test-NetConnection 192.168.159.128 -Port 1514
+  
