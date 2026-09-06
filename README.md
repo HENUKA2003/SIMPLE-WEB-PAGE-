@@ -66,3 +66,16 @@ TcpTestSucceeded       : False
 
 
 PS C:\Windows\system32>
+
+
+
+
+PS C:\Windows\system32> Test-NetConnetion192.168.159.128 -Port1514
+Test-NetConnetion192.168.159.128 : The term 'Test-NetConnetion192.168.159.128' is not recognized as the name of a
+cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify
+that the path is correct and try again.
+At line:1 char:1
++ Test-NetConnetion192.168.159.128 -Port1514
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Test-NetConnetion192.168.159.128:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
