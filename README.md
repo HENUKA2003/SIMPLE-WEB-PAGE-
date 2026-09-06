@@ -15,3 +15,8 @@ Restart-Service WazuhSvc
 
 
 Get-Content "C:\Program Files (x86)\ossec-agent\ossec.log" -Tail 30
+
+PS C:\Windows\system32> Get-Content "C:\Program Files (x86)\ossec-agent\ossec.log" -Tail 3
+2026/09/06 13:48:48 wazuh-agent: INFO: Trying to connect to server ([198.168.156.128]:1514/tcp).
+2026/09/06 13:49:09 wazuh-agent: ERROR: (1216): Unable to connect to '[198.168.156.128]:1514/tcp': 'No connection could be made because the target machine actively refused it.'.
+2026/09/06 13:49:09 wazuh-agent: INFO: Requesting a key from server: 198.168.156.128
