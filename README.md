@@ -19,3 +19,6 @@ Get-Content "C:\Program Files (x86)\ossec-agent\ossec.log" -Tail 30
 
 
 Test-NetConnection 198.168.156.128 -Port 1514
+
+
+MDAyIHdpbmRvcyAxOTIuMTY4LjE1Ni4xMzQgZmY2OTQyOGVjNDgxZWZkODEzMjM2NDdjMTk1ZWRlZWFlNjU4ODE3Njc0YWYxNTgwYzM0MzUxMTQwZjY0MTFhNQ==
