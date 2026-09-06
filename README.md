@@ -25,4 +25,10 @@ MDAyIHdpbmRvcyAxOTIuMTY4LjE1Ni4xMzQgZmY2OTQyOGVjNDgxZWZkODEzMjM2NDdjMTk1ZWRlZWFl
 
 
 
-Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.14.7-1.msi -OutFile $env:tmp\wazuh-agent; msiexec.exe /i $env:tmp\wazuh-agent /q WAZUH_MANAGER='192.168.156.128' WAZUH_AGENT_NAME='windos' 
+Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.14.7-1.msi -OutFile $env:tmp\wazuh-agent; msiexec.exe /i $env:tmp\wazuh-agent /q WAZUH_MANAGER='192.168.156.128' WAZUH_AGENT_NAME='windos'
+
+
+
+
+MDAzIHdpbiAxOTIuMTY4LjE1Ni4xMzQgYTBiNTMyMzBhYTA2ZWFkODFlZjVmNmI3YWE0NWEyMzFlMmZlYTUzODkyOGJjMjI4ZDdjZjk2NGIxNGZiYTljOQ==
+
