@@ -22,3 +22,7 @@ Test-NetConnection 198.168.156.128 -Port 1514
 
 
 MDAyIHdpbmRvcyAxOTIuMTY4LjE1Ni4xMzQgZmY2OTQyOGVjNDgxZWZkODEzMjM2NDdjMTk1ZWRlZWFlNjU4ODE3Njc0YWYxNTgwYzM0MzUxMTQwZjY0MTFhNQ==
+
+
+
+Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.14.7-1.msi -OutFile $env:tmp\wazuh-agent; msiexec.exe /i $env:tmp\wazuh-agent /q WAZUH_MANAGER='192.168.156.128' WAZUH_AGENT_NAME='windos' 
